@@ -1,4 +1,5 @@
 import "./App.css";
+import questionsData from './questions.json';
 
 function App() {
   return (
