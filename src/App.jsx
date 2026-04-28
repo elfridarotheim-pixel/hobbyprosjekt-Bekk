@@ -1,21 +1,13 @@
-import "./App.css";
-import questionsData from './questions.json';
+import './App.css';
+import Board from './components/Board';
 
 function App() {
-  return (
-    <div className="card">
-      <h1>Hei på deg! 👋</h1>
-      <p>
-        Du kan se koden for dette prosjektet{" "}
-        <a href="https://github.com/bekk/prosjektutgangspunkt">
-          i repoet på GitHub
-        </a>
-      </p>
-      <p>
-        Du kan endre koden i <code>src/App.jsx</code>
-      </p>
-    </div>
-  );
+    return (
+        <div className="game-screen">
+            <h1 className="game-title">🎯 Jeopardy</h1>
+            <Board />
+        </div>
+    );
 }
 
 export default App;
